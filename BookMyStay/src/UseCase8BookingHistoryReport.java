@@ -72,9 +72,9 @@ public class UseCase8BookingHistoryReport {
         BookingHistory history = new BookingHistory();
 
         // confirmed reservations
-        history.addReservation(new Reservation("R101", "Alice", "Single"));
-        history.addReservation(new Reservation("R102", "Bob", "Double"));
-        history.addReservation(new Reservation("R103", "Charlie", "Suite"));
+        history.addReservation(new Reservation("R101", "Alice"));
+        history.addReservation(new Reservation("R102", "Bob"));
+        history.addReservation(new Reservation("R103", "Charlie"));
 
         BookingReportService reportService = new BookingReportService();
 

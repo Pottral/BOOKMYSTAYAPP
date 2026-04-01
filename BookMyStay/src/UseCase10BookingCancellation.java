@@ -5,7 +5,7 @@ class Reservation {
     String roomType;
     String roomId;
 
-    Reservation(String id, String roomType, String roomId) {
+    Reservation(String id, String roomType) {
         this.id = id;
         this.roomType = roomType;
         this.roomId = roomId;
@@ -45,8 +45,8 @@ public class UseCase10BookingCancellation {
         inventory.put("Double", 1);
 
         // confirmed bookings
-        bookings.put("R101", new Reservation("R101", "Single", "S1"));
-        bookings.put("R102", new Reservation("R102", "Double", "D1"));
+        bookings.put("R101", new Reservation("R101", "Single"));
+        bookings.put("R102", new Reservation("R102", "Double"));
 
         cancelBooking("R101"); // valid cancellation
         cancelBooking("R200"); // invalid cancellation
